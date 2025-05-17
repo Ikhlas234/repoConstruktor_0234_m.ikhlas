@@ -1,22 +1,25 @@
 
 #include <iostream>
 using namespace std;
-class Buku {
+class buku
+{
     string judul;
 
 public:
-    Buku& setJudul(string judul) {
+    buku setJudul(string judul)
+    {
         this->judul = judul;
         return *this; // chain function
     }
-
-    string getJudul() {
+    string getJudul()
+    {
         return this->judul;
-    }
-};
+    }    
+} bukunya;
 
-int main() {
-    Buku bukunya;
+int main()
+{
+    
     cout << bukunya.setJudul("Matematika").getJudul(); // chain function calls
     return 0;
 }
